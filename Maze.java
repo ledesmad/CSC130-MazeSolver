@@ -12,11 +12,11 @@ public class Maze {
 
   //Constructor, creates a 3d array from the file entered.
   public Maze(String Filename) throws FileNotFoundException {
-    Scanner scan = new Scanner(new File(Filename));
+    Scanner scan = new Scanner(new File(Filename)); //Scans the file.
     numr = scan.nextInt();
     numc = scan.nextInt();
     mz = new int[numr][numc];
-    for (int i = 0; i < numr; i++) {
+    for (int i = 0; i < numr; i++) {  //Fills 3d Array
       for (int j = 0; j < numc; j++) {
         mz[i][j] = scan.nextInt();
       }
